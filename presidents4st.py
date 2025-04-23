@@ -10,7 +10,7 @@ import os
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
 # gemini api setup
-genai.configure(api_key=key.mykey)
+
 model = genai.GenerativeModel("gemini-2.0-flash")
 gemini_cache: dict[str, str] = {}
 
