@@ -6,7 +6,9 @@ from io import BytesIO
 import random
 import time
 import google.generativeai as genai
-import key
+#import key
+import os
+genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
 # gemini api setup
 genai.configure(api_key=key.mykey)
